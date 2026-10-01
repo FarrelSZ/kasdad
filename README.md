@@ -11,6 +11,7 @@ tinggal ditambahkan (lihat [Menambah file slide berikutnya](#menambah-file-slide
 | --- | --- | --- | --- |
 | 1 | Pengantar Kecerdasan Artifisial (`01 What is AI_updated.pdf`) | `/ka` | 52 slide, bernomor 1–53 tanpa 11 |
 | 2 | Pengantar Sains Data (`02 What is Data Science_updated.pdf`) | `/sd` | 50 slide, bernomor 1–50 |
+| 3 | Pengumpulan Data, Pemahaman Data (EDA), dan Statistika (`03_Data_Collection_EDA_and_Statistics_updated.pdf`) | `/data` | 81 slide, bernomor 1–81 |
 
 Semua halaman dibuat statis saat `build`, jadi cepat dan cocok untuk Vercel. Tidak ada server, basis data, atau
 variabel lingkungan yang perlu diatur.
@@ -89,9 +90,9 @@ Sumber isi situs adalah satu dokumen Markdown gabungan (di Claude Docs: "Penjela
 Sains Data Dasar"). Tiap file slide menjadi satu Bagian, dengan bentuk:
 
 ```markdown
-# Bagian 3: Judul Bagian               <- nomor Bagian dan judulnya
+# Bagian 4: Judul Bagian               <- nomor Bagian dan judulnya
 
-## Cara membaca Bagian 3               <- bab pertama tanpa slide = pengantar Bagian
+## Cara membaca Bagian 4               <- bab pertama tanpa slide = pengantar Bagian
 
 ## Nama Bab (Slide 1–5)                <- bab; rentang di dalam kurung hanya untuk pemeriksaan
 
@@ -107,8 +108,8 @@ Langkahnya:
    ```
    Skrip `scripts/import-doc.mjs` menulis `content/<slug>/slides/NN.md` dan `content/<slug>/intro.md`, lalu memperbarui
    `content/manifest.json`. Hanya Bagian yang ada di dokumen yang ditulis ulang.
-3. Bila Bagian itu baru, skrip menambahkan entri bawaan ke `content/modules.config.json` (slug `bagian-3`). Ubah slug
-   (huruf kecil, mis. `sd`), nama pendek untuk bilah atas, nama file sumber, dan keterangan di berkas itu, lalu jalankan
+3. Bila Bagian itu baru, skrip menambahkan entri bawaan ke `content/modules.config.json` (slug `bagian-4`). Ubah slug
+   (huruf kecil, mis. `sd` atau `data`), nama pendek untuk bilah atas, nama file sumber, dan keterangan di berkas itu, lalu jalankan
    langkah 2 lagi. Slug menjadi alamat Bagian (`/slug/slide/N`).
 4. Jalankan `npm run build`. Bila ada slide yang formatnya salah, build berhenti dengan pesan yang menyebut Bagian, nomor
    slide, dan letak kesalahannya.
@@ -244,8 +245,12 @@ scripts/
 - **Bagian 1 tidak punya slide 11.** File slide sumber melompat dari slide 10 ke slide 12, jadi situs ini mengikuti
   penomoran sumber dan melewati 11.
 - **Gambar slide tidak disertakan.** Gambar dan diagram pada slide asli dijelaskan dengan kata-kata, bagian demi bagian.
-- **Tambahan dari sumber luar** (mis. Bagian 1 slide 51 dan 52, serta beberapa slide di Bagian 2) diberi label dan tautan
-  sendiri; bedakan dari isi slide. Bagian "contoh tambahan" adalah contoh buatan penyusun catatan, bukan isi slide.
+- **Tambahan dari sumber luar** (mis. Bagian 1 slide 51 dan 52, beberapa slide di Bagian 2, dan beberapa slide di Bagian 3)
+  diberi label dan tautan sendiri; bedakan dari isi slide. Bagian "contoh tambahan" adalah contoh buatan penyusun catatan,
+  bukan isi slide.
 - **Data pada Bagian 1 slide 8** berasal dari tahun 2021.
+- **Bagian 3 memuat angka yang dibaca atau diukur dari gambar slide** (mis. luas irisan diagram lingkaran 3D, jari-jari
+  gelembung, nilai pada sumbu logaritmik). Angka itu diberi tanda "perkiraan dari gambar" atau "hasil ukur saya", jadi
+  anggap sebagai taksiran, bukan data resmi. Salah ketik pada slide sumber disebut apa adanya, tidak diperbaiki diam-diam.
 - Ini catatan belajar tidak resmi. Penjelasannya dibuat dengan bantuan AI, jadi cocokkan dengan slide asli dan buku
   teks sebelum dipakai untuk ujian. Hak atas materi slide ada pada penyusunnya di Fasilkom UI.

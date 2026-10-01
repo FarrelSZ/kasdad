@@ -207,6 +207,7 @@ pre code {
 .meta {
   color: var(--muted);
   font-size: 0.95rem;
+  overflow-wrap: anywhere; /* nama berkas sumber panjang tanpa spasi */
 }
 
 .lede {
@@ -655,6 +656,7 @@ main[tabindex='-1']:focus {
   padding: 0;
   margin: 0 0 1rem;
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 1rem;
 }
 
@@ -678,6 +680,7 @@ main[tabindex='-1']:focus {
 .card__meta {
   color: var(--muted);
   font-size: 0.92rem;
+  overflow-wrap: anywhere; /* nama berkas sumber panjang tanpa spasi */
 }
 
 .card__actions,
@@ -910,6 +913,7 @@ main[tabindex='-1']:focus {
 .scrollbox {
   overflow-x: auto;
   max-width: 100%;
+  position: relative; /* teks sr-only di dalam tabel ikut terpotong, tidak melebarkan halaman */
 }
 
 .table-scroll {

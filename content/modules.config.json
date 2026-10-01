@@ -10,5 +10,11 @@
     "short": "Pengantar Sains Data",
     "source": "02 What is Data Science_updated.pdf",
     "description": "Mengapa sains data dibutuhkan, siapa pelakunya, kerangka kerja KDD sampai CRISP-DM, satu studi kasus lengkap, dan data dalam bentuk tubuh, kata, serta gambar."
+  },
+  "3": {
+    "slug": "data",
+    "short": "Data, EDA, dan Statistik",
+    "source": "03_Data_Collection_EDA_and_Statistics_updated.pdf",
+    "description": "Cara mengumpulkan data, memahami data lewat analisis data eksploratif, statistika deskriptif (pusat, keragaman, bentuk sebaran, korelasi), dan visualisasi data dari diagram garis sampai diagram gelembung."
   }
 }
