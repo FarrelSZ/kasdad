@@ -1,0 +1,76 @@
+{
+  "modules": [
+    {
+      "number": 1,
+      "slug": "ka",
+      "title": "Pengantar Kecerdasan Artifisial",
+      "introTitle": "Cara membaca Bagian 1",
+      "chapters": [
+        {
+          "title": "Bagian Awal",
+          "slides": [1, 2, 3]
+        },
+        {
+          "title": "Kecerdasan Artifisial: Have You Heard of It?",
+          "slides": [4, 5, 6, 7, 8, 9]
+        },
+        {
+          "title": "Definisi Kecerdasan Artifisial",
+          "slides": [10, 12, 13, 14, 15, 16, 17]
+        },
+        {
+          "title": "Agen Cerdas",
+          "slides": [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
+        },
+        {
+          "title": "Sejarah Singkat KA",
+          "slides": [31, 32]
+        },
+        {
+          "title": "Taksonomi dan Cabang KA",
+          "slides": [33, 34, 35, 36, 37, 38]
+        },
+        {
+          "title": "Konsep Dasar Pemelajaran Mesin",
+          "slides": [39, 40, 41, 42, 43, 44, 45, 46, 47, 48]
+        },
+        {
+          "title": "KA di Fasilkom UI",
+          "slides": [49, 50, 51, 52, 53]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "slug": "sd",
+      "title": "Pengantar Sains Data",
+      "introTitle": "Cara membaca Bagian 2",
+      "chapters": [
+        {
+          "title": "Bagian Awal",
+          "slides": [1, 2, 3]
+        },
+        {
+          "title": "Motivasi di Balik Sains Data",
+          "slides": [4, 5, 6, 7, 8, 9]
+        },
+        {
+          "title": "Pengertian dan Lingkup Sains Data",
+          "slides": [10, 11, 12, 13, 14, 15, 16, 17, 18]
+        },
+        {
+          "title": "Metodologi Sains Data",
+          "slides": [19, 20, 21, 22, 23, 24]
+        },
+        {
+          "title": "Studi Kasus",
+          "slides": [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41]
+        },
+        {
+          "title": "Data Reimagined",
+          "slides": [42, 43, 44, 45, 46, 47, 48, 49, 50]
+        }
+      ]
+    }
+  ]
+}
