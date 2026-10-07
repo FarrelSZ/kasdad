@@ -16,5 +16,11 @@
     "short": "Data, EDA, dan Statistik",
     "source": "03_Data_Collection_EDA_and_Statistics_updated.pdf",
     "description": "Cara mengumpulkan data, memahami data lewat analisis data eksploratif, statistika deskriptif (pusat, keragaman, bentuk sebaran, korelasi), dan visualisasi data dari diagram garis sampai diagram gelembung."
+  },
+  "4": {
+    "slug": "prep",
+    "short": "Persiapan Data",
+    "source": "04_Data_Preparation_updated.pdf",
+    "description": "Mengapa data nyata kotor dan cara menyiapkannya: pembersihan, integrasi, transformasi, seleksi dan reduksi, diskretisasi, lalu tiga contoh lengkap pada data konsumsi anggur."
   }
 }

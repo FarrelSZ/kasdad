@@ -99,6 +99,46 @@
           "slides": [42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81]
         }
       ]
+    },
+    {
+      "number": 4,
+      "slug": "prep",
+      "title": "Persiapan Data",
+      "introTitle": "Cara membaca Bagian 4",
+      "chapters": [
+        {
+          "title": "Bagian Awal",
+          "slides": [1, 2, 3, 4, 5]
+        },
+        {
+          "title": "Data “Kotor”",
+          "slides": [6, 7, 8, 9, 10]
+        },
+        {
+          "title": "Pembersihan Data",
+          "slides": [11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
+        },
+        {
+          "title": "Integrasi Data",
+          "slides": [26, 27, 28, 29, 30, 31]
+        },
+        {
+          "title": "Transformasi Data",
+          "slides": [32, 33, 34, 35]
+        },
+        {
+          "title": "Seleksi dan Reduksi Data",
+          "slides": [36, 37, 38, 39, 40, 41]
+        },
+        {
+          "title": "Diskretisasi Data",
+          "slides": [42, 43, 44]
+        },
+        {
+          "title": "Ringkasan dan Contoh Lengkap",
+          "slides": [45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58]
+        }
+      ]
     }
   ]
 }
