@@ -22,5 +22,11 @@
     "short": "Persiapan Data",
     "source": "04_Data_Preparation_updated.pdf",
     "description": "Mengapa data nyata kotor dan cara menyiapkannya: pembersihan, integrasi, transformasi, seleksi dan reduksi, diskretisasi, lalu tiga contoh lengkap pada data konsumsi anggur."
+  },
+  "5": {
+    "slug": "fitur",
+    "short": "Rekayasa dan Seleksi Fitur",
+    "source": "05_Feature_Engineering_and_Selection_updated.pdf",
+    "description": "Mengubah data bersih menjadi fitur yang mudah dipelajari model (membuat fitur baru, pengodean kategorik, binning, penskalaan, Bag of Words), lalu memilih fitur yang berguna dengan metode filter, wrapper, dan embedded."
   }
 }

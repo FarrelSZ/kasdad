@@ -139,6 +139,50 @@
           "slides": [45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58]
         }
       ]
+    },
+    {
+      "number": 5,
+      "slug": "fitur",
+      "title": "Rekayasa dan Seleksi Fitur",
+      "introTitle": "Cara membaca Bagian 5",
+      "chapters": [
+        {
+          "title": "Bagian Awal dan Pengertian Fitur",
+          "slides": [1, 2, 3]
+        },
+        {
+          "title": "Rekayasa Fitur: Pengertian dan Proses",
+          "slides": [4, 5, 6, 7]
+        },
+        {
+          "title": "Membuat Fitur Baru",
+          "slides": [8, 9, 10, 11]
+        },
+        {
+          "title": "Encoding Data Kategorik",
+          "slides": [12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
+        },
+        {
+          "title": "Binarisasi, Binning, Penskalaan, dan Bag of Words",
+          "slides": [22, 23, 24, 25, 26, 27, 28, 29, 30]
+        },
+        {
+          "title": "Kutukan Dimensi dan Pengantar Seleksi Fitur",
+          "slides": [31, 32, 33, 34, 35, 36]
+        },
+        {
+          "title": "Metode Filter",
+          "slides": [37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
+        },
+        {
+          "title": "Metode Wrapper",
+          "slides": [55, 56, 57, 58, 59, 60, 61]
+        },
+        {
+          "title": "Metode Embedded",
+          "slides": [62, 63, 64]
+        }
+      ]
     }
   ]
 }

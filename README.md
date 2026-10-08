@@ -13,6 +13,7 @@ tinggal ditambahkan (lihat [Menambah file slide berikutnya](#menambah-file-slide
 | 2 | Pengantar Sains Data (`02 What is Data Science_updated.pdf`) | `/sd` | 50 slide, bernomor 1–50 |
 | 3 | Pengumpulan Data, Pemahaman Data (EDA), dan Statistika (`03_Data_Collection_EDA_and_Statistics_updated.pdf`) | `/data` | 81 slide, bernomor 1–81 |
 | 4 | Persiapan Data (`04_Data_Preparation_updated.pdf`) | `/prep` | 58 slide, bernomor 1–58 |
+| 5 | Rekayasa dan Seleksi Fitur (`05_Feature_Engineering_and_Selection_updated.pdf`) | `/fitur` | 64 slide, bernomor 1–64 |
 
 Semua halaman dibuat statis saat `build`, jadi cepat dan cocok untuk Vercel. Tidak ada server, basis data, atau
 variabel lingkungan yang perlu diatur.
@@ -91,9 +92,9 @@ Sumber isi situs adalah satu dokumen Markdown gabungan (di Claude Docs: "Penjela
 Sains Data Dasar"). Tiap file slide menjadi satu Bagian, dengan bentuk:
 
 ```markdown
-# Bagian 5: Judul Bagian               <- nomor Bagian dan judulnya
+# Bagian 6: Judul Bagian               <- nomor Bagian dan judulnya
 
-## Cara membaca Bagian 5               <- bab pertama tanpa slide = pengantar Bagian
+## Cara membaca Bagian 6               <- bab pertama tanpa slide = pengantar Bagian
 
 ## Nama Bab (Slide 1–5)                <- bab; rentang di dalam kurung hanya untuk pemeriksaan
 
@@ -109,8 +110,8 @@ Langkahnya:
    ```
    Skrip `scripts/import-doc.mjs` menulis `content/<slug>/slides/NN.md` dan `content/<slug>/intro.md`, lalu memperbarui
    `content/manifest.json`. Hanya Bagian yang ada di dokumen yang ditulis ulang.
-3. Bila Bagian itu baru, skrip menambahkan entri bawaan ke `content/modules.config.json` (slug `bagian-5` untuk Bagian berikutnya). Ubah slug
-   (huruf kecil, mis. `sd`, `data`, atau `prep`), nama pendek untuk bilah atas, nama file sumber, dan keterangan di berkas itu, lalu jalankan
+3. Bila Bagian itu baru, skrip menambahkan entri bawaan ke `content/modules.config.json` (slug `bagian-6` untuk Bagian berikutnya). Ubah slug
+   (huruf kecil, mis. `sd`, `data`, `prep`, atau `fitur`), nama pendek untuk bilah atas, nama file sumber, dan keterangan di berkas itu, lalu jalankan
    langkah 2 lagi. Slug menjadi alamat Bagian (`/slug/slide/N`).
 4. Jalankan `npm run build`. Bila ada slide yang formatnya salah, build berhenti dengan pesan yang menyebut Bagian, nomor
    slide, dan letak kesalahannya.
@@ -199,6 +200,8 @@ Aturan yang dipakai pembaca file (`lib/content.ts`):
   "slide 1 dari 10" dibiarkan sebagai teks biasa.
 - Tabel memakai sintaks tabel Markdown biasa. Rumus ditulis LaTeX di dalam blok kode ` ```latex `; rumus yang tidak
   valid menghentikan build.
+- Blok kode berpagar lain (mis. ` ```python ` untuk contoh kode dan keluarannya) tampil apa adanya. Bila barisnya lebih
+  lebar daripada layar, blok itu bisa digeser ke samping dan difokus dengan papan ketik, seperti tabel.
 
 Hal yang sering membuat bagian tidak tampil seperti harapan:
 
@@ -226,7 +229,7 @@ app/
   globals.css                   seluruh gaya, termasuk mode gelap dan cetak
   icon.svg                      ikon situs
 components/
-  Markdown.tsx, MathBlock.tsx, ScrollBox.tsx   Markdown ke HTML; rumus KaTeX; tabel dan rumus yang bisa digeser
+  Markdown.tsx, MathBlock.tsx, ScrollBox.tsx   Markdown ke HTML; rumus KaTeX; tabel, rumus, dan blok kode yang bisa digeser
   SectionView.tsx, Quiz.tsx, ToggleAll.tsx     satu bagian slide; contoh soal; tombol "buka semua pembahasan"
   SiteHeader.tsx, ModuleTabs.tsx, SiteFooter.tsx   bilah atas dengan pilihan Bagian; kaki halaman
   SlideNav.tsx                  panel samping dan laci di layar sempit, dengan pencarian
@@ -258,5 +261,11 @@ scripts/
   (slide 50 sampai 52) tidak dapat dihitung ulang dari baris yang tampak atau berbeda satuannya. Semuanya disebut apa adanya.
   Angka yang dihitung penyusun catatan diberi tanda "hasil hitung saya". Slide sumber banyak memuat tautan; sebagian besar
   tidak dibuka penyusun catatan.
+- **Bagian 5 banyak memuat tambahan dari penyusun catatan.** Beberapa slide hanya berisi gambar, tabel, atau tangkapan layar tanpa
+  penjelasan (mis. slide 54, 59, 63, dan 64), sehingga penjelasan, rumus, dan contoh hitungannya adalah tambahan penyusun catatan
+  (diberi tanda "tambahan dari saya", "hasil hitung saya", atau "hasil periksa saya"). Hasil menjalankan pustaka Python
+  (scikit-learn 1.8) pada contoh tambahan berlaku untuk versi itu; keluarannya dapat berbeda pada versi lain. Salah ketik dan
+  kejanggalan pada slide sumber (mis. label tertukar di slide 16, "158.13" di slide 44, "0.479" di slide 52) disebut apa adanya.
+  Tautan di slide tidak dibuka penyusun catatan.
 - Ini catatan belajar tidak resmi. Penjelasannya dibuat dengan bantuan AI, jadi cocokkan dengan slide asli dan buku
   teks sebelum dipakai untuk ujian. Hak atas materi slide ada pada penyusunnya di Fasilkom UI.

@@ -972,6 +972,20 @@ main[tabindex='-1']:focus {
   outline-offset: 0;
 }
 
+/* blok kode: pembungkus yang menggulir, bukan <pre> sendiri, supaya bisa difokus lewat papan ketik */
+.code-scroll {
+  margin: 1em 0;
+  background: var(--code-bg);
+  border-radius: 0.5rem;
+}
+
+.code-scroll pre {
+  margin: 0;
+  overflow: visible;
+  width: max-content;
+  min-width: 100%;
+}
+
 /* contoh soal */
 .quiz__hint {
   color: var(--muted);
@@ -1201,6 +1215,12 @@ main[tabindex='-1']:focus {
 
   .scrollbox {
     overflow: visible;
+  }
+
+  .code-scroll pre {
+    width: auto;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
   }
 
   a {

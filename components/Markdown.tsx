@@ -45,7 +45,12 @@ const components: Components = {
         return <MathBlock latex={text && text.type === 'text' ? text.value : ''} />;
       }
     }
-    return <pre>{children}</pre>;
+    // blok kode: pembungkusnya yang menggulir ke samping dan bisa difokus lewat papan ketik saat barisnya meluap
+    return (
+      <ScrollBox label="Kode atau keluaran; geser ke samping untuk melihat baris yang panjang" className="code-scroll">
+        <pre>{children}</pre>
+      </ScrollBox>
+    );
   },
 };
 
