@@ -183,6 +183,62 @@
           "slides": [62, 63, 64]
         }
       ]
+    },
+    {
+      "number": 6,
+      "slug": "pca",
+      "title": "Reduksi Dimensi dan PCA",
+      "introTitle": "Cara membaca Bagian 6",
+      "chapters": [
+        {
+          "title": "Bagian Awal: Mengapa Dimensi Perlu Dikurangi",
+          "slides": [1, 2, 3, 4, 5, 6]
+        },
+        {
+          "title": "Matriks Kovarians",
+          "slides": [7, 8, 9]
+        },
+        {
+          "title": "Basis, Dimensi, dan Koordinat Relatif",
+          "slides": [10, 11, 12]
+        },
+        {
+          "title": "Transformasi Linier dan Perubahan Basis",
+          "slides": [13, 14]
+        },
+        {
+          "title": "Nilai dan Vektor Eigen",
+          "slides": [15, 16]
+        },
+        {
+          "title": "Diagonalisasi Matriks",
+          "slides": [17, 18]
+        },
+        {
+          "title": "Transformasi Secara Umum dan Perannya di Pemelajaran Mesin",
+          "slides": [19, 20, 21, 22]
+        },
+        {
+          "title": "Langkah-Langkah PCA dengan Contoh Hitungan",
+          "slides": [23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36]
+        },
+        {
+          "title": "Mereduksi Dimensi dan Memilih Jumlah Komponen",
+          "slides": [37, 38, 39, 40, 41]
+        },
+        {
+          "title": "Intuisi: Mengapa Diagonalisasi Kovarians Menghasilkan Fitur Tak Berkorelasi",
+          "slides": [42, 43, 44, 45]
+        },
+        {
+          "title": "Contoh Aplikasi: Pengenalan Wajah dengan Eigenfaces",
+          "slides": [46, 47, 48, 49, 50]
+        },
+        {
+          "title": "Metode Reduksi Dimensi Lain: SVD, t-SNE, dan UMAP",
+          "slides": [51, 52, 53]
+        }
+      ]
     }
   ]
 }

@@ -28,5 +28,11 @@
     "short": "Rekayasa dan Seleksi Fitur",
     "source": "05_Feature_Engineering_and_Selection_updated.pdf",
     "description": "Mengubah data bersih menjadi fitur yang mudah dipelajari model (membuat fitur baru, pengodean kategorik, binning, penskalaan, Bag of Words), lalu memilih fitur yang berguna dengan metode filter, wrapper, dan embedded."
+  },
+  "6": {
+    "slug": "pca",
+    "short": "Reduksi Dimensi dan PCA",
+    "source": "06_Dimensionality_Reduction_and_PCA_updated.pdf",
+    "description": "Mengapa dimensi data perlu dikurangi, alat aljabar linear yang dibutuhkan (matriks kovarians, basis, transformasi, nilai dan vektor eigen, diagonalisasi), langkah-langkah PCA dengan contoh hitungan, memilih jumlah komponen, intuisi di baliknya, pengenalan wajah dengan eigenface, serta SVD, t-SNE, dan UMAP."
   }
 }
