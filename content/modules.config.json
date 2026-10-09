@@ -34,5 +34,11 @@
     "short": "Reduksi Dimensi dan PCA",
     "source": "06_Dimensionality_Reduction_and_PCA_updated.pdf",
     "description": "Mengapa dimensi data perlu dikurangi, alat aljabar linear yang dibutuhkan (matriks kovarians, basis, transformasi, nilai dan vektor eigen, diagonalisasi), langkah-langkah PCA dengan contoh hitungan, memilih jumlah komponen, intuisi di baliknya, pengenalan wajah dengan eigenface, serta SVD, t-SNE, dan UMAP."
+  },
+  "7": {
+    "slug": "cart",
+    "short": "CART",
+    "source": "07_CART_updated.pdf",
+    "description": "Letak CART di antara metode pemelajaran mesin, bentuk pohon keputusan, algoritma pembelajarannya (biaya Gini, entropi, dan MSE, titik pisah, sifat rakus), dua contoh hitungan lengkap (pohon klasifikasi Ice Age dan pohon regresi nilai ujian), cara mengendalikan ukuran pohon dengan hyperparameter, serta isu, kelebihan, dan kekurangan CART."
   }
 }

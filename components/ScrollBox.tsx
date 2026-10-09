@@ -14,7 +14,9 @@ export function ScrollBox({ children, label, className = '' }: { children: React
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    const check = () => setScrollable(el.scrollWidth > el.clientWidth + 1);
+    // tanpa toleransi: alat uji aksesibilitas (axe) menganggap kotak yang meluap satu piksel pun
+    // sebagai wilayah yang bisa digeser, jadi kotak seperti itu harus bisa difokus juga
+    const check = () => setScrollable(el.scrollWidth > el.clientWidth);
     check();
     const observer = new ResizeObserver(check);
     observer.observe(el);
