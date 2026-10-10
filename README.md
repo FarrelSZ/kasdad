@@ -16,6 +16,7 @@ tinggal ditambahkan (lihat [Menambah file slide berikutnya](#menambah-file-slide
 | 5 | Rekayasa dan Seleksi Fitur (`05_Feature_Engineering_and_Selection_updated.pdf`) | `/fitur` | 64 slide, bernomor 1–64 |
 | 6 | Reduksi Dimensi dan PCA (`06_Dimensionality_Reduction_and_PCA_updated.pdf`) | `/pca` | 53 slide, bernomor 1–53 |
 | 7 | Pohon Klasifikasi dan Regresi, CART (`07_CART_updated.pdf`) | `/cart` | 64 slide, bernomor 1–64 |
+| 8 | Hutan Acak, Random Forest (`08_Random_Forests_updated.pdf`) | `/rf` | 33 slide, bernomor 1–33 |
 
 Semua halaman dibuat statis saat `build`, jadi cepat dan cocok untuk Vercel. Tidak ada server, basis data, atau
 variabel lingkungan yang perlu diatur.
@@ -25,7 +26,7 @@ variabel lingkungan yang perlu diatur.
 - Halaman depan berisi daftar Bagian, kemajuan belajar, dan arti warna. Tiap Bagian punya halaman pengantar dan daftar
   slide per bab; tiap slide punya halamannya sendiri (`/ka/slide/19`, `/sd/slide/5`, dan seterusnya).
 - Pindah antar-Bagian lewat satu tombol menu "Bagian" di bilah atas, yang membuka daftar semua Bagian. Bilah atas tetap
-  satu baris di layar lebar maupun HP, jadi Bagian 8, 9, dan seterusnya cukup muncul sendiri di daftar itu. Menu bisa
+  satu baris di layar lebar maupun HP, jadi Bagian 9, 10, dan seterusnya cukup muncul sendiri di daftar itu. Menu bisa
   dioperasikan dengan papan ketik (Enter untuk membuka, Tab untuk menelusuri, Esc untuk menutup). Tombol "Berikutnya" di
   slide terakhir sebuah Bagian melanjutkan ke slide pertama Bagian berikutnya.
 - Responsif: panel daftar slide di layar lebar, laci geser di layar sempit; tabel dan rumus yang lebar bisa digeser.
@@ -96,9 +97,9 @@ Sumber isi situs adalah satu dokumen Markdown gabungan (di Claude Docs: "Penjela
 Sains Data Dasar"). Tiap file slide menjadi satu Bagian, dengan bentuk:
 
 ```markdown
-# Bagian 8: Judul Bagian               <- nomor Bagian dan judulnya
+# Bagian 9: Judul Bagian               <- nomor Bagian dan judulnya
 
-## Cara membaca Bagian 8               <- bab pertama tanpa slide = pengantar Bagian
+## Cara membaca Bagian 9               <- bab pertama tanpa slide = pengantar Bagian
 
 ## Nama Bab (Slide 1–5)                <- bab; rentang di dalam kurung hanya untuk pemeriksaan
 
@@ -114,8 +115,8 @@ Langkahnya:
    ```
    Skrip `scripts/import-doc.mjs` menulis `content/<slug>/slides/NN.md` dan `content/<slug>/intro.md`, lalu memperbarui
    `content/manifest.json`. Hanya Bagian yang ada di dokumen yang ditulis ulang.
-3. Bila Bagian itu baru, skrip menambahkan entri bawaan ke `content/modules.config.json` (slug `bagian-8` untuk Bagian berikutnya). Ubah slug
-   (huruf kecil, mis. `sd`, `data`, `prep`, `fitur`, `pca`, atau `cart`), nama pendek untuk bilah atas, nama file sumber, dan keterangan di berkas itu, lalu jalankan
+3. Bila Bagian itu baru, skrip menambahkan entri bawaan ke `content/modules.config.json` (slug `bagian-9` untuk Bagian berikutnya). Ubah slug
+   (huruf kecil, mis. `sd`, `data`, `prep`, `fitur`, `pca`, `cart`, atau `rf`), nama pendek untuk bilah atas, nama file sumber, dan keterangan di berkas itu, lalu jalankan
    langkah 2 lagi. Slug menjadi alamat Bagian (`/slug/slide/N`).
 4. Jalankan `npm run build`. Bila ada slide yang formatnya salah, build berhenti dengan pesan yang menyebut Bagian, nomor
    slide, dan letak kesalahannya.
@@ -284,5 +285,6 @@ scripts/
   banyak memuat percobaan kecil pada data rekaan dengan scikit-learn 1.8 (diberi tanda "hasil hitung saya" dan "contoh rekaan"); arah hasilnya yang berguna,
   bukan angkanya. Tiga potongan kode semu (slide 27, 57, dan 59) adalah tambahan penyusun catatan. Gambar pohon di slide 55 dan 56 tidak terbaca
   dan hanya dijelaskan bentuknya. Tautan dan video di slide tidak dibuka penyusun catatan.
+- **Bagian 8 mengulang sebagian Bagian 7 dan memuat banyak percobaan kecil dari penyusun catatan.** Slide 5 sampai 12 identik dengan bahan CART di Bagian 7 (tabel Ice Age, tabel nilai ujian, dan daftar kelebihan-kekurangan), termasuk kekeliruan angka daun 71.4 dan 56.67 di slide 11 (yang benar 69,67 dan 54,5). Slide 16 sampai 33 banyak memuat percobaan kecil dengan scikit-learn 1.8 pada data kanker payudara, bulan sabit, wine, diabetes, dan data buatan (diberi tanda "hasil hitung saya"); arah hasilnya yang berguna, bukan angkanya. Nilai pada grafik slide 30 diukur penyusun catatan dari gambar (ketelitian sekitar ±0,0002) dan diberi tanda "saya ukur dari gambar". Empat potongan kode semu (slide 6, 17, 21, dan 24) adalah tambahan penyusun catatan. Sumber foto di slide 14 serta gambar di slide 28 dan 30 tidak disebut slide, sehingga yang ditulis hanya dugaan. Video dan buku di slide 2 tidak dibuka penyusun catatan.
 - Ini catatan belajar tidak resmi. Penjelasannya dibuat dengan bantuan AI, jadi cocokkan dengan slide asli dan buku
   teks sebelum dipakai untuk ujian. Hak atas materi slide ada pada penyusunnya di Fasilkom UI.

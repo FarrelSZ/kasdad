@@ -40,5 +40,11 @@
     "short": "CART",
     "source": "07_CART_updated.pdf",
     "description": "Letak CART di antara metode pemelajaran mesin, bentuk pohon keputusan, algoritma pembelajarannya (biaya Gini, entropi, dan MSE, titik pisah, sifat rakus), dua contoh hitungan lengkap (pohon klasifikasi Ice Age dan pohon regresi nilai ujian), cara mengendalikan ukuran pohon dengan hyperparameter, serta isu, kelebihan, dan kekurangan CART."
+  },
+  "8": {
+    "slug": "rf",
+    "short": "Random Forest",
+    "source": "08_Random_Forests_updated.pdf",
+    "description": "Mengingat kembali CART beserta kelemahannya (kurang akurat dan tidak stabil), pemelajaran ensemble dan bagging dengan bootstrap, resep hutan acak (dua pengacakan: contoh data dan variabel calon pemisah), contoh pembelajaran dan pengujian pada tabel penyakit jantung, hyperparameter, grafik galat uji terhadap banyaknya pohon, alasan hutan lebih baik daripada satu pohon, serta kelebihan dan kekurangan hutan acak."
   }
 }

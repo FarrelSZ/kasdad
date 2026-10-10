@@ -279,6 +279,34 @@
           "slides": [60, 61, 62, 63, 64]
         }
       ]
+    },
+    {
+      "number": 8,
+      "slug": "rf",
+      "title": "Hutan Acak (Random Forest)",
+      "introTitle": "Cara membaca Bagian 8",
+      "chapters": [
+        {
+          "title": "Pembuka",
+          "slides": [1, 2, 3, 4]
+        },
+        {
+          "title": "Mengingat Kembali CART",
+          "slides": [5, 6, 7, 8, 9, 10, 11, 12]
+        },
+        {
+          "title": "Pemelajaran Ensemble",
+          "slides": [13, 14, 15, 16, 17, 18]
+        },
+        {
+          "title": "Random Forest",
+          "slides": [19, 20, 21, 22, 23, 24, 25, 26, 27, 28]
+        },
+        {
+          "title": "Kinerja Random Forest",
+          "slides": [29, 30, 31, 32, 33]
+        }
+      ]
     }
   ]
 }
